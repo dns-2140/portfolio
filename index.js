@@ -50,3 +50,9 @@ feForm.addEventListener('submit', (e) => {
   }
   console.log(startVal, endVal, companyVal);
 });
+
+const admin = document.getElementById('admin');
+const form = document.getElementById('addFe');
+admin.addEventListener('click', () => {
+  form.classList.toggle('visibility');
+});

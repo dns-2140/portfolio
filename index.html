@@ -23,10 +23,10 @@
       </a>
       <nav>
         <ul id="menu">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact Me</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="mailto:davidsagala2140@gmail.com">Contact Me</a></li>
         </ul>
         <a href="#" class="mobile-toggle" onclick="toggleMobileMenu()">
           <svg
@@ -49,7 +49,7 @@
       </nav>
     </header>
     <main>
-      <section class="hero container">
+      <section id="about" class="hero container">
         <div class="hero-blue">
           <h1><small>Hi, I'm</small> David Natan</h1>
           <p>
@@ -61,8 +61,10 @@
             >
           </p>
           <div class="call-to-action">
-            <a href="#" class="button black">view resume</a>
-            <a href="#" class="button white">contact me</a>
+            <a href="cv.pdf" class="button black">view resume</a>
+            <a href="mailto:davidsagala2140@gmail.com" class="button white"
+              >contact me</a
+            >
           </div>
           <div class="social-links">
             <a href="#"
@@ -119,7 +121,7 @@
           </div>
         </div>
       </section>
-      <section class="skills container">
+      <section id="skills" class="skills container">
         <h2>
           <small>About me</small>
           Skills
@@ -170,7 +172,7 @@
             <figure>
               <div>
                 <img
-                  src="/assets/images/workplace-1.jpg"
+                  src="https://images.pexels.com/photos/716276/pexels-photo-716276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="workplace1"
                   width="100%"
                 />
@@ -184,7 +186,7 @@
         </div>
       </section>
     </main>
-    <div class="container2">
+    <div id="project" class="container2">
       <h2>my projects</h2>
       <div class="a">
         <div class="project">
@@ -200,14 +202,7 @@
     </div>
 
     <div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <form action="" id="addFe">
+      <form action="" id="addFe" class="visibility">
         <label for="fe">List your front end stack</label>
         <input id="fe" type="text" placeholder="javascript" />
         <label for="be">List your back end stack</label>
@@ -223,6 +218,7 @@
         <button>submit</button>
       </form>
     </div>
+    <button id="admin">admin</button>
     <script src="index.js"></script>
   </body>
 </html>
