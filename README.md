@@ -28,9 +28,3 @@ Web Fonts: Google Fonts (Inter and Space Grotesk) for modern and clean typograph
 
 5. Project Section
    A section dedicated to some of my key projects, such as:
-
-Web Application for Sports Coaches: Developed landing pages and service booking features. This project deepened my understanding of typography and color theory.
-Iconography and UI Enhancements: Built icons and learned key design principles during this project. 6. Call to Action
-View Resume: A direct link to my PDF resume.
-Contact Me: Easy access to email for collaboration or job inquiries. 7. Skills Section
-A categorized list of my front-end and back-end technical skills. These are dynamically updated via the form, reflecting my continuous learning and development in various tech stacks.

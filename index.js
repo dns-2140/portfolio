@@ -35,8 +35,7 @@ feForm.addEventListener('submit', (e) => {
             <figure>
               <div>
                 <img
-                  src="/assets/images/workplace-1.jpg"
-                  alt="workplace1"
+                  src="https://images.pexels.com/photos/716276/pexels-photo-716276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2""
                   width="100%"
                 />
                 <figcaption>${companyVal}</figcaption>
