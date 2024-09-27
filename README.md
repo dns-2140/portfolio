@@ -1,16 +1,16 @@
 ![Alt text](portfolio.gif)
 
-Overview
+##Overview
 This project showcases my personal portfolio, designed to provide insights into my skills, work experience, and projects as a full-stack developer. The website is fully responsive, optimized for different devices, and implements modern web technologies. It serves as a hub for potential employers and collaborators to learn more about me, view my resume, and get in touch.
 
-Technologies Used
+##Technologies Used
 HTML5: Structure and content.
 CSS3: Styling and layout.
 JavaScript (Vanilla): Interactivity and form handling.
 Responsive Design: Mobile-first approach with a focus on performance and accessibility.
 Web Fonts: Google Fonts (Inter and Space Grotesk) for modern and clean typography.
 
-Features
+##Features
 
 1. Responsive Design
    The website is fully responsive, providing an optimal viewing experience on desktops, tablets, and mobile devices.
