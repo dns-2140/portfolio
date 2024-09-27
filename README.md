@@ -25,6 +25,3 @@ Web Fonts: Google Fonts (Inter and Space Grotesk) for modern and clean typograph
 
 4. Professional Experience Section  
    Showcases my career journey, including previous roles such as teaching staff at Ruangguru (2019-2024). The work experience section dynamically adds new entries via form submission.
-
-5. Project Section  
-   A section dedicated to some of my key projects, such as:
