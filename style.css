@@ -488,3 +488,9 @@ form {
   background-position: top; /* Centers the image */
   background-repeat: no-repeat;
 }
+
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -14,6 +14,17 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/jpg" href="./assets/images/favicon.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.27/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.27/"></script>
+    <style>
+      #viewDiv {
+        height: 75vh;
+        width: 75vw;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -221,6 +232,11 @@
       </div>
     </div>
 
+    <div class="map">
+      <h2>Find me at</h2>
+      <div id="viewDiv"></div>
+    </div>
+
     <div>
       <form action="" id="addFe" class="visibility">
         <label for="fe">List your front end stack</label>
@@ -240,5 +256,67 @@
     </div>
     <button id="admin">admin</button>
     <script src="index.js"></script>
+    <script>
+      require([
+        'esri/Map',
+        'esri/views/MapView',
+        'esri/Graphic',
+        'esri/geometry/Point',
+        'esri/symbols/SimpleMarkerSymbol',
+        'esri/PopupTemplate', // Add PopupTemplate module
+      ], function (
+        Map,
+        MapView,
+        Graphic,
+        Point,
+        SimpleMarkerSymbol,
+        PopupTemplate
+      ) {
+        // Initialize the map
+        var map = new Map({
+          basemap: 'streets-navigation-vector', // Choose a basemap
+        });
+
+        // Create a MapView and attach it to the div element
+        var view = new MapView({
+          container: 'viewDiv',
+          map: map,
+          center: [106.7831575, -6.2427068], // Longitude, Latitude (Gandaria 8 Office Tower)
+          zoom: 15, // Set initial zoom level
+        });
+
+        // Define the fixed location using coordinates (Longitude, Latitude)
+        var fixedLocation = new Point({
+          longitude: 106.7831575, // Longitude
+          latitude: -6.2427068, // Latitude
+        });
+
+        // Create a marker symbol to represent the location
+        var markerSymbol = new SimpleMarkerSymbol({
+          color: [0, 0, 255], // Blue marker
+          outline: {
+            color: [255, 255, 255], // White outline
+            width: 2,
+          },
+        });
+
+        // Add a PopupTemplate for additional information
+        var popupTemplate = new PopupTemplate({
+          title: 'Gandaria 8 Office Tower',
+          content:
+            '<b>Location:</b> Jakarta, Indonesia<br><b>Description:</b> One of the most prominent office towers in the Gandaria City complex.',
+        });
+
+        // Create a graphic to display the point, symbol, and popup
+        var pointGraphic = new Graphic({
+          geometry: fixedLocation,
+          symbol: markerSymbol,
+          popupTemplate: popupTemplate, // Attach the popup template to the graphic
+        });
+
+        // Add the graphic to the map view
+        view.graphics.add(pointGraphic);
+      });
+    </script>
   </body>
 </html>
