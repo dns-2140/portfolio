@@ -472,7 +472,8 @@ form {
 }
 
 .visibility {
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
 }
 
 #admin {
